@@ -1,0 +1,37 @@
+{
+    "vpc_name": "shared-vpc",
+    "ipam_pool_id": "ipam-pool-00c04abe4d3fc39d7",
+    "vpc_cidr_block": "10.0.0.0/16",
+    "subnets": [
+        {
+            "name": "public-subnet-az1",
+            "subnet_size": "small",
+            "type": "public",
+            "az": "us-east-1a"
+        },
+        {
+            "name": "public-subnet-az2",
+            "subnet_size": "medium",
+            "type": "public",
+            "az": "us-east-1b"
+        },
+        {
+            "name": "private-subnet-az1",
+            "subnet_size": "small",
+            "type": "private",
+            "az": "us-east-1a"
+        },
+        {
+            "name": "private-subnet-az2",
+            "subnet_size": "medium",
+            "type": "private",
+            "az": "us-east-1b"
+        },
+        {
+            "name": "private-subnet-az3",
+            "subnet_size": "large",
+            "type": "private",
+            "az": "us-east-1c"
+        }
+    ]
+}
