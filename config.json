@@ -1,6 +1,6 @@
 {
     "vpc_name": "shared-vpc",
-    "ipam_pool_id": "ipam-pool-00c04abe4d3fc39d7",
+    "ipam_pool_id": "ipam-pool-0f2d92d1ded741c70",
     "vpc_cidr_block": "10.0.0.0/16",
     "subnets": [
         {
