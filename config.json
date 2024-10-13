@@ -1,43 +1,68 @@
 {
     "vpc_name": "shared-vpc",
-    "ipam_pool_id": "ipam-pool-0befe5356b615c06e",
+    "region": "eu-central-1",
+    "ipam_pool_id": "ipam-pool-00e7e452e06be1306",
     "vpc_cidr_block": "10.0.0.0/16",
     "subnets": [
         {
             "name": "public-subnet-az1",
             "subnet_size": "small",
             "type": "public",
-            "az": "us-east-1a"
+            "az": "eu-central-1a"
         },
         {
             "name": "public-subnet-az2",
             "subnet_size": "medium",
             "type": "public",
-            "az": "us-east-1b"
+            "az": "eu-central-1b"
         },
         {
             "name": "private-subnet-az1",
             "subnet_size": "small",
             "type": "private",
-            "az": "us-east-1a"
+            "az": "eu-central-1a"
         },
         {
             "name": "private-subnet-az2",
             "subnet_size": "medium",
             "type": "private",
-            "az": "us-east-1b"
+            "az": "eu-central-1b"
         },
         {
             "name": "private-subnet-az3",
             "subnet_size": "large",
             "type": "private",
-            "az": "us-east-1c"
+            "az": "eu-central-1c"
         },
         {
             "name": "public-subnet-az1",
             "subnet_size": "small",
             "type": "public",
-            "az": "us-east-1a"
+            "az": "eu-central-1a"
+        },
+        {
+            "name": "private-subnet-az2",
+            "subnet_size": "medium",
+            "type": "private",
+            "az": "eu-central-1b"
+        },
+        {
+            "name": "private-subnet-az3",
+            "subnet_size": "large",
+            "type": "private",
+            "az": "eu-central-1c"
+        },
+        {
+            "name": "public-subnet-az1",
+            "subnet_size": "small",
+            "type": "public",
+            "az": "eu-central-1a"
+        },
+        {
+            "name": "public-subnet-az3",
+            "subnet_size": "small",
+            "type": "public",
+            "az": "eu-central-1c"
         }
     ]
 }

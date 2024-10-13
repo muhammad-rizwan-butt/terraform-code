@@ -21,3 +21,7 @@ module "subnets" {
   ipam_pool_id = local.json_data.ipam_pool_id
   subnet_data  = local.json_data.subnets
 }
+
+output "subnets" {
+  value = module.subnets.subnets
+}

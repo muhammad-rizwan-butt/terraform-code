@@ -1,3 +1,3 @@
 provider "aws" {
-  region = "us-east-1"
+  region = local.json_data.region
 }
