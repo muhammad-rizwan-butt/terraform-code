@@ -16,12 +16,8 @@ module "subnets" {
   public_nacl_id         = module.shared_vpc.public_nacl_id
   private_nacl_id        = module.shared_vpc.private_nacl_id
   public_route_table_id  = module.shared_vpc.public_route_table_id
-  private_route_table_id = module.shared_vpc.private_route_table_id
+  private_route_table_id = module.shared_vpc.private_route_table_id[*]
 
   ipam_pool_id = local.json_data.ipam_pool_id
   subnet_data  = local.json_data.subnets
-}
-
-output "subnets" {
-  value = module.subnets.subnets
 }

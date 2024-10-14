@@ -1,68 +1,20 @@
 {
     "vpc_name": "shared-vpc",
     "region": "eu-central-1",
-    "ipam_pool_id": "ipam-pool-00e7e452e06be1306",
+    "ipam_pool_id": "ipam-pool-883388338833",
     "vpc_cidr_block": "10.0.0.0/16",
     "subnets": [
         {
-            "name": "public-subnet-az1",
+            "name": "public-subnet",
             "subnet_size": "small",
             "type": "public",
-            "az": "eu-central-1a"
+            "target_aws_account": 11223344
         },
         {
-            "name": "public-subnet-az2",
-            "subnet_size": "medium",
-            "type": "public",
-            "az": "eu-central-1b"
-        },
-        {
-            "name": "private-subnet-az1",
-            "subnet_size": "small",
-            "type": "private",
-            "az": "eu-central-1a"
-        },
-        {
-            "name": "private-subnet-az2",
-            "subnet_size": "medium",
-            "type": "private",
-            "az": "eu-central-1b"
-        },
-        {
-            "name": "private-subnet-az3",
+            "name": "private-subnet",
             "subnet_size": "large",
             "type": "private",
-            "az": "eu-central-1c"
-        },
-        {
-            "name": "public-subnet-az1",
-            "subnet_size": "small",
-            "type": "public",
-            "az": "eu-central-1a"
-        },
-        {
-            "name": "private-subnet-az2",
-            "subnet_size": "medium",
-            "type": "private",
-            "az": "eu-central-1b"
-        },
-        {
-            "name": "private-subnet-az3",
-            "subnet_size": "large",
-            "type": "private",
-            "az": "eu-central-1c"
-        },
-        {
-            "name": "public-subnet-az1",
-            "subnet_size": "small",
-            "type": "public",
-            "az": "eu-central-1a"
-        },
-        {
-            "name": "public-subnet-az3",
-            "subnet_size": "small",
-            "type": "public",
-            "az": "eu-central-1c"
+            "target_aws_account": 1122334455
         }
     ]
 }
