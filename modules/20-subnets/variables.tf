@@ -7,10 +7,10 @@ variable "ipam_pool_id" {
 
 variable "subnet_data" {
   type = list(object({
-    name        = string
-    subnet_size = string
-    type        = string
-    az          = string
+    name               = string
+    subnet_size        = string
+    type               = string
+    target_aws_account = number
   }))
 }
 
@@ -27,5 +27,5 @@ variable "public_route_table_id" {
 }
 
 variable "private_route_table_id" {
-  type = string
+  type = list(string)
 }
